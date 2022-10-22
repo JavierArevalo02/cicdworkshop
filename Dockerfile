@@ -5,10 +5,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm install && npm build
+RUN npm install && npm run build
 
-FROM nginx:1.21.6-alpine
+EXPOSE 3000
 
-COPY --from=build-env /app/build /usr/share/nginx/html
-
-EXPOSE 80
+CMD npm start
