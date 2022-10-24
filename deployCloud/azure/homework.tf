@@ -125,7 +125,7 @@ resource "azurerm_linux_virtual_machine" "homework5" {
     createdBy = "Javier Arevalo"
   }
 }
-
+#Config Machine
 resource "azurerm_virtual_machine_extension" "homework5" {
     virtual_machine_id = azurerm_linux_virtual_machine.homework5.id
     name                    = "homework5Endava-machine-extension"
