@@ -8,7 +8,6 @@ nsgrules = {
         protocol          = "tcp"
         cidr_blocks       = ["129.151.110.163/32"]
     }
-
     http = {
         type              = "ingress"
         from_port         = 80
